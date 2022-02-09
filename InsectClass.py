@@ -7,9 +7,5 @@ class Insect:
         self.mile = 0
 
     def flight(self):
-        self.get_flight = random.randint(1,10)
-
-
-
-    def get_mile(self):
+        self.get_mile = random.randint(1,10)
         return self.get_mile
