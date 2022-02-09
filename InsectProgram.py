@@ -1,6 +1,6 @@
 import InsectClass as i
 
-fly = i.Insect()
+fly = i.Insect(2,4)
 
 fly.flight_length()
 

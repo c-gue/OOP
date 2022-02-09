@@ -20,6 +20,10 @@ class BankAccount:
       # from the account.
 
     def withdraw(self, amount):
+      if amount <= 0:
+        print("You Fool!")
+
+      else:
         if self.__balance >= amount:
             self.__balance -= amount
         else:
