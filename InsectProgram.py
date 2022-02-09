@@ -1,11 +1,9 @@
 import InsectClass as i
 
-def main():
+fly = i.Insect()
 
-    my_insect = i.Insect()
+fly.flight_length()
+
+print('The flight of this insect is: ', fly.get_miles(),'miles.')
 
 
-    print('The flight of this insect is: ', my_insect.flight(),'miles.')
-
-
-main()
