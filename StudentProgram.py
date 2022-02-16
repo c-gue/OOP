@@ -12,4 +12,5 @@ def main():
     print("Brad Roedema is",brad.get_age(),"years old")
     print("Brad Roedema registers",brad.get_registration())
 
+
 main()

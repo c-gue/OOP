@@ -1,7 +1,3 @@
-from operator import itemgetter
-from pydoc import describe
-from tkinter import UNITS
-
 
 class RetailItem:
 
@@ -36,3 +32,7 @@ class RetailItem:
 
     def get_cost(self):
         return self.__Price
+
+    def __str__(self):
+        #return 'The item # is ' + self.__ItemNumber + ', the description is ' + self.__Description + ', the units in inventory is' + self.__Inventory + ', and the price is $' + self.__Price
+        return 'The item # is ' + format(self.__ItemNumber,',.0f') + ', the description is ' + self.__Description + ', the number of units is ' + format(self.__Inventory,',.0f') + ', and the price is $' + format(self.__Price,',.2f')
