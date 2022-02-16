@@ -8,19 +8,6 @@ class RetailItem:
         self.__Inventory = units
         self.__Price = price
 
-
-    def number(self,itemno):
-        self.number = itemno
-    
-    def item(self,description):
-        self.item = description
-
-    def inv(self,count):
-        self.inv = count
-
-    def cost(self,rp):
-        self.cost = rp
-
     def get_number(self):
         return self.__ItemNumber
 

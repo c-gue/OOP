@@ -25,7 +25,7 @@ def main():
     print(item1.__str__())
     print(item2.__str__())
     print(item3.__str__())
-
+'''
     repeat = input("Would you like to revist any items? (y/n) ")
 
     while repeat == 'y':
@@ -40,6 +40,6 @@ def main():
             print("Item not listed. Try again.")
 
         repeat = input("Would you like to revist any items? (y/n) ")
-
+'''
 
 main()
