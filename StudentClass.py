@@ -15,7 +15,7 @@ class StudentClass:
 
 
     def StudentAge(self):
-        self.__age = date.today().year - self.__DateOfBirth.year - 1
+        self.__age = date.today().year - self.__DateOfBirth.year
 
     def Registration(self):
         if self.__Classification == "Sr" or "sr":
