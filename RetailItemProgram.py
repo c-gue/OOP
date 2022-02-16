@@ -3,43 +3,58 @@ import RetailItemClass as r
 
 def main():
 
-    itemno1 = int(input('What is your item number? '))
-    description1 = input('What item are you looking for? ')
-    count1 = int(input('How many units are left in the inventory? '))
-    rp1 = float(input('How much does this item cost? '))
 
-    itemno2 = int(input('What is your item number? '))
-    description2 = input('What item are you looking for? ')
-    count2 = int(input('How many units are left in the inventory? '))
-    rp2 = float(input('How much does this item cost? '))
-
-    itemno3 = int(input('What is your item number? '))
-    description3 = input('What item are you looking for? ')
-    count3 = int(input('How many units are left in the inventory? '))
-    rp3 = float(input('How much does this item cost? '))
-
-    item1 = r.RetailItem(itemno1,description1,count1,rp1)
-    item2 = r.RetailItem(itemno2,description2,count2,rp2)
-    item3 = r.RetailItem(itemno3,description3,count3,rp3)
+    item1 = r.RetailItem("Jacket",12,59.95)
+    item2 = r.RetailItem("Designer Jeans",40,34.95)
+    item3 = r.RetailItem("Shirt",20,24.95)
 
     print(item1.__str__())
     print(item2.__str__())
     print(item3.__str__())
-'''
+
     repeat = input("Would you like to revist any items? (y/n) ")
 
     while repeat == 'y':
         request = int(input("Which item number would you like to view? "))
         if request == 1:
-            print(item1.__str__())
+            choice = input('Would you like to view the full item (all), description (d), units (u), or price (p)?')
+            if choice == 'all':
+                print(item1.__str__())
+            elif choice == 'd':
+                print(item1.get_item())
+            elif choice == 'u':
+                print(item1.get_inv())
+            elif choice == 'p':
+                print(item1.get_cost())
+            else:
+                print("Invalid input. Try again.") 
         elif request == 2:
-            print(item2.__str__())
+            choice = input('Would you like to view the full item (all), description (d), units (u), or price (p)?')
+            if choice == 'all':
+                print(item2.__str__())
+            elif choice == 'd':
+                print(item2.get_item())
+            elif choice == 'u':
+                print(item2.get_inv())
+            elif choice == 'p':
+                print(item2.get_cost())
+            else:
+                print("Invalid input. Try again.") 
         elif request == 3:
-            print(item3.__str__())
+            choice = input('Would you like to view the full item (all), description (d), units (u), or price (p)?')
+            if choice == 'all':
+                print(item3.__str__())
+            elif choice == 'd':
+                print(item3.get_item())
+            elif choice == 'u':
+                print(item3.get_inv())
+            elif choice == 'p':
+                print(item3.get_cost())
+            else:
+                print("Invalid input. Try again.") 
         else:
             print("Item not listed. Try again.")
 
         repeat = input("Would you like to revist any items? (y/n) ")
-'''
 
 main()
